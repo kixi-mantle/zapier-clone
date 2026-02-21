@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",      // Compiled files will go here
+    "rootDir": "./",  
+    "moduleResolution": "nodenext",    // This tells tsc where your source code starts
+    "target": "esnext",
+    "module": "nodenext",
+    "rewriteRelativeImportExtensions": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,      // <--- THIS IS THE MAGIC FIX
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src/**/*","credentials.ts","index.ts","google_auth.ts"],
+  "exclude": [
+    "node_modules",   // Standard: don't compile your dependencies
+    "dist",           // Don't compile your own output
+    
+  ]    
+}

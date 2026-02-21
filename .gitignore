@@ -2,3 +2,7 @@
 node_modules/
 /generated/prisma
 .env
+google_auth
+/backend/dist
+/backend/drizzle/
+/backend/google_auth.ts
