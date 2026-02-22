@@ -2,7 +2,9 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import OAuthCallback from './components/callback'
-import LoginButton from './components/loginButton'
+
+
+import Authpage from './routes/AuthPage'
 
 function App() {
  
@@ -10,11 +12,12 @@ function App() {
   return (
 
    <BrowserRouter>  {/* One router at top level */}
-      <div className='h-screen w-screen flex justify-center items-center'>
+      <div className='h-screen w-screen flex justify-center items-center bg-slate-900'>
         <Routes>
-          <Route path='/' element={<LoginButton />} />
+          <Route path='/' element={<Authpage/>} />
           <Route path='/auth/callback' element={<OAuthCallback />} />
         </Routes>
+        
       </div>
     </BrowserRouter>
   )

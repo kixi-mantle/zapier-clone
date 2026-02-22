@@ -6,3 +6,4 @@ google_auth
 /backend/dist
 /backend/drizzle/
 /backend/google_auth.ts
+/frontend/src/components/ui
